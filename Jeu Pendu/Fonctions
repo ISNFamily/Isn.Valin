@@ -1,2 +1,6 @@
-nom=input("Entrez votre nom")
-print("Good luck",nom,"!Try to find the right word to win.")
+def nom_utilisateur():
+    nom=input("Entrez votre nom")
+  if len(nom)<3:
+     nom=input("Entrez votre nom")
+  else:
+    print("Good luck",nom,"!Try to find the right word to win.")
