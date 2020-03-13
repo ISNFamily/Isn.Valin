@@ -4,3 +4,12 @@ def nom_utilisateur():
      nom=input("Entrez votre nom")
   else:
     print("Good luck",nom,"!Try to find the right word to win.")
+    
+    def lettre_recup:
+    lettre_entrer=input("Entrer une lettre:")
+    if lettre_entrer>1:
+        print("Enter une lettre seulement")
+        input("Entrer une nouvele lettre svp:")
+    elif lettre_entrer=='1':
+        print("Entrer une lettre et non un nombre")
+        input("Entrer une lettre cette fois svp:")
