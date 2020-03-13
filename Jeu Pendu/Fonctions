@@ -1,9 +1,9 @@
 def nom_utilisateur():
     nom=input("Entrez votre nom")
-  if len(nom)<3:
-     nom=input("Entrez votre nom")
-  else:
-    print("Good luck",nom,"!Try to find the right word to win.")
+    if len(nom)<3:
+        nom=input("Entrez votre nom")
+    else:
+        print("Good luck",nom,"!Try to find the right word to win.")
     
     def lettre_recup:
     lettre_entrer=input("Entrer une lettre:")
