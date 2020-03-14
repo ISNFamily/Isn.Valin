@@ -1,4 +1,5 @@
-from donnees import all
+from donnees import *
+from random import choice
 
 #océane
 def nom_joueur():
