@@ -7,9 +7,9 @@ def nom_joueur():
         print("Good luck",nom,"!Try to find the right word to win.")
     
 def lettre_recup():
-    lettre_entrer=input(str("Entrer une lettre:"))
+    lettre_entrer=str(input("Entrer une lettre:"))
     if lettre_entrer>1:
-        print("Enter une lettre seulement")
-        input("Entrer une nouvele lettre svp:")
+        print("Enter une lettre seulemen!!")
+        input("Entrer une lettre seulement:")
     else:
         return lettre_recup
