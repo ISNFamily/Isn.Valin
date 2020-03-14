@@ -1,3 +1,5 @@
+from donnees import all
+
 def nom_joueur():
     nom=input("Entrez votre nom")
     if len(nom)<3:
@@ -5,11 +7,16 @@ def nom_joueur():
         return nom_joueur
     else:
         print("Good luck",nom,"!Try to find the right word to win.")
-    
+
 def lettre_recup():
     lettre_entrer=str(input("Entrer une lettre:"))
     if lettre_entrer>1:
-        print("Enter une lettre seulemen!!")
-        input("Entrer une lettre seulement:")
+        print("Enter une lettre seulement")
+        input("Entrer une nouvele lettre svp:")
     else:
         return lettre_recup
+
+def mot_a_choisir():
+    choice(liste_mot)
+    return mot_a_choisir
+
