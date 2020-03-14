@@ -1,5 +1,6 @@
 from donnees import all
 
+#océane
 def nom_joueur():
     nom=str(input("Entrez votre nom:"))
     if len(nom)<3:
@@ -8,6 +9,7 @@ def nom_joueur():
     else:
         print("Good luck",nom,"!Try to find the right word to win.")
 
+#isaac
 def lettre_recup():
     lettre_entrer=str(input("Entrer une lettre:"))
     if lettre_entrer>1:
@@ -15,7 +17,8 @@ def lettre_recup():
         input("Entrer une nouvele lettre svp:")
     else:
         return lettre_recup
-
+        
+#mazen
 def mot_a_choisir():
     choice(liste_mot)
     return mot_a_choisir
