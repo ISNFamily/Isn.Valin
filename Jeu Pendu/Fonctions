@@ -1,7 +1,7 @@
 from donnees import all
 
 def nom_joueur():
-    nom=input("Entrez votre nom")
+    nom=str(input("Entrez votre nom:"))
     if len(nom)<3:
         nom=input("Entrez un nom valide svp")
         return nom_joueur
