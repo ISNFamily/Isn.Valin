@@ -13,7 +13,7 @@ def nom_joueur():
 #isaac
 def lettre_recup():
     lettre_entrer=str(input("Entrer une lettre:"))
-    if lettre_entrer>1:
+    if len(lettre_entrer)>1:
         print("Enter une lettre seulement")
         input("Entrer une nouvele lettre svp:")
     else:
