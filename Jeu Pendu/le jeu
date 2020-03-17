@@ -1,0 +1,4 @@
+from donnees import *
+from fonctions import*
+
+utilisateur = nom_joueur()
