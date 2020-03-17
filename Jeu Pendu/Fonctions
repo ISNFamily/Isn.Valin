@@ -3,23 +3,28 @@ from random import choice
 
 #océane
 def nom_joueur():
-    nom=str(input("Entrez votre nom:"))
+    nom=input("Entrez votre nom")
     if len(nom)<3:
         nom=input("Entrez un nom valide svp")
         return nom_joueur
     else:
         print("Good luck",nom,"!Try to find the right word to win.")
-
 #isaac
 def lettre_recup():
-    lettre_entrer=str(input("Entrer une lettre:"))
+    lettre_entrer = input("Tapez une lettre seulement: ")
     if len(lettre_entrer)>1:
-        print("Enter une lettre seulement")
-        input("Entrer une nouvele lettre svp:")
+        return lettre_entrer
     else:
-        return lettre_recup
-        
+        return lettre_entrer
 #mazen
 def mot_a_choisir():
-    choice(liste_mot)
-    return mot_a_choisir
+    return choice(liste_mot)
+
+def mot_a_cacher(mot_complet,lettre_trouvees):
+    mot_cacher=""
+    for lettre_entrer in mot_complet:
+        if lettre_entrer in lettre_trouvees:
+            mot_cacher += lettre_entrer
+        else:
+            mot_cacher += "*"
+    return mot_cacher
