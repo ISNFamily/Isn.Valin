@@ -23,4 +23,3 @@ def lettre_recup():
 def mot_a_choisir():
     choice(liste_mot)
     return mot_a_choisir
-
