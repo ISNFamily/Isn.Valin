@@ -2,3 +2,6 @@ from donnees import *
 from fonctions import*
 
 utilisateur = nom_joueur()
+mot_a_chercher = mot_a_choisir()
+lettres_trouvees = []
+mot_trouver = mot_a_cacher(mot_a_chercher, lettres_trouvees)
