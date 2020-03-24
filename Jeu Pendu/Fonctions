@@ -6,6 +6,7 @@ def nom_joueur():
     nom=input("Entrez votre nom")
     if len(nom)<3:
         nom=input("Entrez un nom valide svp")
+        print("Good luck",nom,"!Try to find the right word to win.")
         return nom_joueur
     else:
         print("Good luck",nom,"!Try to find the right word to win.")
