@@ -1,5 +1,7 @@
 from donnees import *
 from fonctions import*
+import turtle as tt
+import math
 
 utilisateur = nom_joueur()
 mot_a_chercher = mot_a_choisir()
@@ -19,9 +21,6 @@ while mot_a_chercher != mot_trouver and nombre_chance > 0 :
     mot_trouver = mot_a_cacher(mot_a_chercher, lettres_trouvees)
 
 #OCEANE
-import turtle as tt
-import math
-nombre_chance=int(input("Entrez le nombre de chances"))
 tt.hideturtle()
 if nombre_chance==9 :
     tt.penup()
