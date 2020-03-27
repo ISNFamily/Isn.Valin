@@ -19,27 +19,28 @@ while mot_a_chercher != mot_trouver and nombre_chance > 0 :
         nombre_chance -= 1
         print("NON , Cette lettre n’appartient pas au mot, il vous reste",nombre_chance,"chances")
     mot_trouver = mot_a_cacher(mot_a_chercher, lettres_trouvees)
+    tt.hideturtle()
+    if nombre_chance==9 :
+     tt.penup()
+     tt.goto(-100,-100)
+     tt.pendown()
+     tt.forward(150)
+    if nombre_chance==8 :
+        tt.penup()
+        tt.goto(-75,-100)
+        tt.pendown()
+        tt.goto(-75,-100)
+    if nombre_chance==7 :
+        tt.pendown()
+        tt.goto(-75,100)
+        tt.forward(200)
+    if nombre_chance==6 :
+         tt.goto(125,80)
+    if nombre_chance==5 :
+        tt.penup()
+        tt.goto(125,50)
+        tt.pendown()
+        tt.circle(15)
+tt.exitonclick()
 
-#OCEANE
-tt.hideturtle()
-if nombre_chance==9 :
-    tt.penup()
-    tt.goto(-100,-100)
-    tt.pendown()
-    tt.forward(150)
-elif nombre_chance==8 :
-    tt.penup()
-    tt.goto(-75,-100)
-    tt.pendown()
-    tt.goto(-75,-100)
-elif nombre_chance==7 :
-    tt.pendown()
-    tt.goto(-75,100)
-    tt.forward(200)
-elif nombre_chance==6 :
-    tt.goto(125,80)
-elif nombre_chance==5 :
-    tt.penup()
-    tt.goto(125,50)
-    tt.pendown()
-    tt.circle(15)
+
