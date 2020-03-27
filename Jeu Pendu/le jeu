@@ -5,3 +5,15 @@ utilisateur = nom_joueur()
 mot_a_chercher = mot_a_choisir()
 lettres_trouvees = []
 mot_trouver = mot_a_cacher(mot_a_chercher, lettres_trouvees)
+
+#mazen
+while mot_a_chercher != mot_trouver and nombre_chance > 0 :
+    print("Mot à trouver" ,mot_trouver)
+    lettre=lettre_recup()
+    if lettre in mot_a_chercher:
+        lettres_trouvees.append(lettre)
+        print("BRAVO , vous avez trouvé une lettre, il vous reste",nombre_chance,"chances")
+    else:
+        nombre_chance -= 1
+        print("NON , Cette lettre n’appartient pas au mot, il vous reste",nombre_chance,"chances")
+    mot_trouver = mot_a_cacher(mot_a_chercher, lettres_trouvees)
