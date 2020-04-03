@@ -66,4 +66,7 @@ while mot_a_chercher != mot_trouver and nombre_chance > 0 :
         tt.goto(160,20)
 tt.exitonclick()
 
-
+if mot_a_chercher==mot_trouver:
+    print("le mot était",mot_a_chercher,"BRAVO vous avez remporté la partie !!!")
+else :
+    print("Le mot était",mot_a_chercher,"DOMMAGE vous avez échoué à cette partie...")
