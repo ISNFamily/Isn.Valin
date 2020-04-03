@@ -72,4 +72,7 @@ if nombre_chance==0 :
         tt.goto(160,20)
 tt.exitonclick()
 
-
+#Isaac
+input ("Voulez vous rejouer ?")
+while "Non":
+    print("Merci d'avoir joué")
