@@ -1,5 +1,7 @@
 from donnees import *
 from random import choice
+import turtle as tt
+import time
 
 #océane
 def nom_joueur():
@@ -7,7 +9,7 @@ def nom_joueur():
     if len(nom)<3:
         nom=input("Entrez un nom valide svp")
         print("Good luck",nom,"!Try to find the right word to win.")
-        return nom_joueur
+        return nom_joueur()
     else:
         print("Good luck",nom,"!Try to find the right word to win.")
 #isaac
@@ -21,11 +23,11 @@ def lettre_recup():
 def mot_a_choisir():
     return choice(liste_mot)
 
-def mot_a_cacher(mot_complet,lettre_trouvees):
+def mot_a_cacher(mot_a_chercher,lettre_trouvees):
     mot_cacher=""
-    for lettre_entrer in mot_complet:
+    for lettre_entrer in mot_a_chercher:
         if lettre_entrer in lettre_trouvees:
-            mot_cacher += lettre_entrer
+            mot_cacher+= lettre_entrer
         else:
             mot_cacher += "*"
     return mot_cacher
@@ -46,7 +48,7 @@ def affiche(nombre_chance):
         tt.goto(-75,100)
         tt.forward(200)
     if nombre_chance<=6 :
-         tt.goto(125,80)
+        tt.goto(125,80)
     if nombre_chance<=5 :
         tt.penup()
         tt.goto(125,50)
@@ -74,4 +76,5 @@ def affiche(nombre_chance):
     if nombre_chance<=0 :
         tt.pendown()
         tt.goto(160,20)
-    tt.exitonclick()
+    time.sleep(10)
+    tt.bye()
