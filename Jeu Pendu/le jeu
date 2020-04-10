@@ -1,7 +1,5 @@
 from donnees import *
-from fonctions import*
-import turtle as tt
-import math
+from fonctions import *
 
 utilisateur = nom_joueur()
 jouer_encore= "oui"
@@ -22,6 +20,8 @@ while jouer_encore!="non":
         else:
          nombre_chance -= 1
          print("NON , Cette lettre n’appartient pas au mot, il vous reste",nombre_chance,"chance(s)")
+         print("Regardez la fênetre Turtle, pour voir l'état de votre pendu ;)")
+         dessin_pendu=affiche(nombre_chance)
         mot_trouver = mot_a_cacher(mot_a_chercher, lettres_trouvees)
     #OCEANE
     if mot_a_chercher==mot_trouver:
@@ -31,4 +31,4 @@ while jouer_encore!="non":
 
 
     jouer_encore=input("Voulez vous rejouer (oui/non)?")
-    
+
