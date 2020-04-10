@@ -9,6 +9,7 @@ jouer_encore= "oui"
 #isaac
 while jouer_encore!="non":
     #mazen
+    nombre_chance=10
     mot_a_chercher = mot_a_choisir()
     lettres_trouvees = []
     mot_trouver = mot_a_cacher(mot_a_chercher, lettres_trouvees)
@@ -25,54 +26,9 @@ while jouer_encore!="non":
     #OCEANE
     if mot_a_chercher==mot_trouver:
        print("le mot était :",mot_a_chercher,",BRAVO vous avez remporté la partie !!!")
-    else :
+    elif mot_a_chercher!= mot_trouver :
        print("Le mot était :",mot_a_chercher,",DOMMAGE vous avez échoué à cette partie...")
 
 
     jouer_encore=input("Voulez vous rejouer (oui/non)?")
     
-tt.hideturtle()
-if nombre_chance==9 :
-     tt.penup()
-     tt.goto(-100,-100)
-     tt.pendown()
-     tt.forward(150)
-if nombre_chance==8 :
-        tt.penup()
-        tt.goto(-75,-100)
-        tt.pendown()
-        tt.goto(-75,-100)
-if nombre_chance==7 :
-        tt.pendown()
-        tt.goto(-75,100)
-        tt.forward(200)
-if nombre_chance==6 :
-         tt.goto(125,80)
-if nombre_chance==5 :
-        tt.penup()
-        tt.goto(125,50)
-        tt.pendown()
-        tt.circle(15)
-if nombre_chance==4 :
-        tt.penup()
-        tt.goto(125,50)
-        tt.pendown()
-        tt.goto(125,-30)
-if nombre_chance==3 :
-        tt.goto(150,-60)
-        tt.penup()
-        tt.goto(125,-30)
-if nombre_chance==2:
-        tt.pendown()
-        tt.goto(100,-60)
-        tt.penup()
-        tt.goto(125,10)
-if nombre_chance==1 :
-        tt.pendown()
-        tt.goto(90,20)
-        tt.penup()
-        tt.goto(125,10)
-if nombre_chance==0 :
-        tt.pendown()
-        tt.goto(160,20)
-tt.exitonclick()
