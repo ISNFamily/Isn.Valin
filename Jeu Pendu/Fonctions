@@ -79,7 +79,5 @@ if nombre_chance==1 :
 if nombre_chance<=0 :
      tt.pendown()
      tt.goto(160,20)
-    
-    tt.exitonclick()
     time.sleep(10)
     tt.bye()
