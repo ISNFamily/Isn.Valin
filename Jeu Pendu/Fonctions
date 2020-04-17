@@ -31,6 +31,8 @@ def mot_a_cacher(mot_a_chercher,lettre_trouvees):
         else:
             mot_cacher += "*"
     return mot_cacher
+    
+#Océane
 
 def affiche(nombre_chance):
   tt.hideturtle()
