@@ -45,7 +45,7 @@ if nombre_chance<=8 :
      tt.penup()
      tt.goto(-75,-100)
      tt.pendown()
-     tt.goto(-75,-100)
+     tt.goto(-75,100)
 if nombre_chance<=7 :
      tt.pendown()
      tt.goto(-75,100)
